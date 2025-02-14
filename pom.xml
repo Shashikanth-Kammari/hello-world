@@ -11,10 +11,12 @@
   <description>Sample Maven project with a working, deployable site.</description>
   <url>http://www.example.com</url>
 
+
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
   </properties>
+
 
   <modules>
     <module>server</module>
@@ -30,17 +32,6 @@
   </distributionManagement>
 
   <build>
-      <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version> <!-- Update to a supported version -->
-            <configuration>
-                <source>8</source>  <!-- Change to 11 if needed -->
-                <target>8</target>
-            </configuration>
-        </plugin>
-    </plugins>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
